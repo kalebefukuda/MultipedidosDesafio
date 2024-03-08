@@ -1,20 +1,52 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     font-family: 'Satoshi', sans-serif;
     background: #e5e5e5;
   }
+  .header-container{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    border-radius: 10px 10px;
+    width: 100%;
+  }
+
+  h1{
+    text-align: center;
+    margin-left:30px;
+    
+  }
+
+  .nav-header{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    
+  }
+
+  .input-header{
+    outline: none;
+    border-radius: 6px;
+    font-size: 15px;
+    flex-grow: 1;
+    
+  }
+
+  .icon-add{
+    font-size: 20px;
+    margin-right: 10px;
+    align-self: center;
+    text-decoration: none;
+
+  }
   
-  .container {
+  .main-container {
     max-width: 800px;
     margin: 20px auto;
     padding: 0 20px;
   }
-  
-  h1 {
-    text-align: center;
-  }
+ 
   
   .motoboys-list {
     list-style: none;

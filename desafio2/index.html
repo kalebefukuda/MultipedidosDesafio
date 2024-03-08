@@ -8,8 +8,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Lista de Motoboys</h1>
+  <header class="header-container">
+    <h1>GM</h1>
+    <nav class="nav-header">
+      <input type="text" class="input-header" placeholder="Pesquisar motoboy" >
+      <a href="#"><ion-icon name="add-circle-outline" class="icon-add"></ion-icon></a>
+    </nav>
+    
+  </header>
+
+
+  <main class="main-container">
+    <h2> Cadastrados</h2>
     <ul class="motoboys-list">
       <li class="motoboy-item">
         <div class="motoboy-info">
@@ -79,7 +89,7 @@
         </div>
       </li>
     </ul>
-  </div>
+  </main>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
