@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    
+}
+
+h1{
+    color: aliceblue;
+    font-family: 'Satoshi', sans-serif;
+}
