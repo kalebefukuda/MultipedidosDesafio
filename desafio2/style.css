@@ -2,13 +2,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Satoshi', sans-serif;
-    background: #e4e0e0;
-    
+    background-color: #242424;
+    background-size: contain;
   }
   .header-container{
     display: flex;
     justify-content: space-between;
-    background: #48BBED;
+    background: #ff4d00;
     border-radius: 0 0 20px 20px;
     width: 100%;
     position: fixed;
@@ -21,6 +21,12 @@ body {
   }
 
   h1{
+    font-family: "Montserrat Alternates", sans-serif;
+    text-align: center;
+    color: #F3F3F3;
+  }
+
+  .h1-header{
     font-family: "Montserrat Alternates", sans-serif;
     text-align: center;
     margin-left:50px;
@@ -45,14 +51,14 @@ body {
     outline: none;
     border-radius: 10px;
     font-size: 15px;
-    color: rgb(209 213 219);
+    color: #242424;
     padding: 7px;
     width: 20rem;
     
   }
 
   .input-header::placeholder{
-    color: #c8c2c2;
+    color: #242424;
     font-family: 'Satoshi', sans-serif;
     padding: 5px;
   }
@@ -78,12 +84,19 @@ body {
 
   h2 {
     font-size: 30px;
+    color: #F3F3F3;
+    font-family: "Montserrat Alternates", sans-serif;
+  }
+
+  h3 {
+    font-size: 30px;
+    color: #F3F3F3;
 
   }
   
   .main-container {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 8rem auto 20px; /* Adiciona 80px de margem superior para compensar a altura do header */
     padding: 0 20px;
   }
  
@@ -94,15 +107,16 @@ body {
   }
   
   .motoboy-item {
-    
     margin-bottom: 12px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 20px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.146);
+    transition: background-color 0.3s ease;
   }
+  
 
   .motobot-personal-info{
     background-color: blue;
@@ -164,7 +178,26 @@ body {
 
   }
 
-  .footer-container{
+  .footer-container {
+    height: 8.5rem;
     display: flex;
-    background: #48BBED;
+    margin-top: 4rem;
+    background-color: #ff4d00;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px 10px 0 0;
+  }
+  .footer-text{
+    margin-top: 20px;
+    
+  }
+  .p-footer{
+    color: #F3F3F3;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .h1-footer {
+    margin-bottom: -8px; /* Ajusta a margem inferior do h1 */
   }
