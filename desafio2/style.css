@@ -2,42 +2,82 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Satoshi', sans-serif;
-    background: #e5e5e5;
+    background: #e4e0e0;
+    
   }
   .header-container{
     display: flex;
     justify-content: space-between;
-    background: white;
-    border-radius: 10px 10px;
+    background: #48BBED;
+    border-radius: 0 0 20px 20px;
     width: 100%;
+    position: fixed;
+    top: 0px;
+  }
+
+  a{
+    text-decoration-color: none;
+    text-decoration: none;
   }
 
   h1{
+    font-family: "Montserrat Alternates", sans-serif;
     text-align: center;
-    margin-left:30px;
+    margin-left:50px;
+    color: #F3F3F3;
     
   }
 
   .nav-header{
     display: flex;
     align-items: center;
-    margin-right: 50px;
+    margin-right: 80px;
+    gap:20px
     
+  }
+
+  .nav-header a{
+    margin-right: 10px;
   }
 
   .input-header{
+    border:none;
     outline: none;
-    border-radius: 6px;
+    border-radius: 10px;
     font-size: 15px;
-    flex-grow: 1;
+    color: rgb(209 213 219);
+    padding: 7px;
+    width: 20rem;
     
   }
 
+  .input-header::placeholder{
+    color: #c8c2c2;
+    font-family: 'Satoshi', sans-serif;
+    padding: 5px;
+  }
+
+  .nav-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .icon-add{
-    font-size: 20px;
+    font-size: 22px;
     margin-right: 10px;
     align-self: center;
     text-decoration: none;
+    justify-content: center;
+    color: #F3F3F3;
+  }
+
+  .icon-header{
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 30px;
 
   }
   
@@ -54,8 +94,8 @@ body {
   }
   
   .motoboy-item {
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
+    
+    margin-bottom: 12px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -63,10 +103,39 @@ body {
     border-radius: 20px;
     background-color: white;
   }
+
+  .motobot-personal-info{
+    background-color: blue;
+  }
+
+  .motoboy-item:hover{
+    box-shadow: 0 0 10px rgb(156 163 175); 
+    transition: box-shadow 0.3s ease; 
+  }
   
+  .motoboy-img-nome{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+
+  .motoboy-phone {
+    display: flex;
+    
+  }
+
+  .motoboy-img{
+    width: 90px;
+  }
+
   .motoboy-info {
     flex-grow: 1;
     padding: 15px;
+  }
+
+  .motoboy-actions{
+    display: flex;
+    
   }
   
   .motoboy-actions button {
@@ -93,4 +162,9 @@ body {
     background-color: rgb(47, 107, 227);
     animation-duration: 100ms;
 
+  }
+
+  .footer-container{
+    display: flex;
+    background: #48BBED;
   }

@@ -4,15 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gestão de Motoboys</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header-container">
-    <h1>GM</h1>
+    <a href="#">
+      <h1>MotosGuide</h1>
+    </a>
     <nav class="nav-header">
-      <input type="text" class="input-header" placeholder="Pesquisar motoboy" >
-      <a href="#"><ion-icon name="add-circle-outline" class="icon-add"></ion-icon></a>
+      <input type="text" class="input-header" placeholder="Pesquisar motoboy..." >
+      <div class="nav-icons">
+        <a href="#">
+          <ion-icon name="add-circle"class="icon-add icon-header"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="chatbubble"class="icon-add icon-header"></ion-icon>
+        </a>
+      </div>
     </nav>
     
   </header>
@@ -23,10 +35,13 @@
     <ul class="motoboys-list">
       <li class="motoboy-item">
         <div class="motoboy-info">
-          <h2>João da Silva</h2>
-          <p>Placa do Veículo: ABC-1234</p>
+          <div class="motoboy-img-nome">
+            <img src="/desafio2/assets/perfil1.png" alt="Imagem moto boy 1" class="motoboy-img">
+            <h2>João da Silva</h1>
+          </div>
+          <!-- <p>Placa do Veículo: ABC-1234</p>
           <p>Telefone: (11) 98765-4321</p>
-          <p>Email: joao@example.com</p>
+          <p>Email: joao@example.com</p> -->
         </div>
         
         <div class="motoboy-actions">
@@ -37,10 +52,13 @@
 
       <li class="motoboy-item">
         <div class="motoboy-info">
-          <h2>Mateus Pereira</h2>
-          <p>Placa do Veículo: ABC-1234</p>
+          <div class="motoboy-img-nome">
+            <img src="/desafio2/assets/perfil2.png" alt="Imagem moto boy 1" class="motoboy-img">
+            <h2>Mateus Pereira</h1>
+          </div>
+          <!-- <p>Placa do Veículo: ABC-1234</p>
           <p>Telefone: (11) 98765-4321</p>
-          <p>Email: mateuspereira@example.com</p>
+          <p>Email: mateuspereira@example.com</p> -->
         </div>
         
         <div class="motoboy-actions">
@@ -51,10 +69,13 @@
 
       <li class="motoboy-item">
         <div class="motoboy-info">
-          <h2>Gustavo Martins</h2>
-          <p>Placa do Veículo: ABC-1234</p>
+          <div class="motoboy-img-nome">
+            <img src="/desafio2/assets/perfil3.png" alt="Imagem moto boy 1" class="motoboy-img">
+            <h2>Cristina Rocha</h1>
+          </div>
+          <!-- <p>Placa do Veículo: ABC-1234</p>
           <p>Telefone: (11) 98765-4321</p>
-          <p>Email: gustavo@example.com</p>
+          <p>Email: gustavo@example.com</p> -->
         </div>
         
         <div class="motoboy-actions">
@@ -64,10 +85,25 @@
       </li>
       <li class="motoboy-item">
         <div class="motoboy-info">
-          <h2>Fábio Costa</h2>
-          <p>Placa do Veículo: ABC-1234</p>
-          <p>Telefone: (11) 98765-4321</p>
-          <p>Email: fabiocosta@example.com</p>
+          <div class="motoboy-img-nome">
+            <img src="/desafio2/assets/perfil4.png" alt="Imagem moto boy 1" class="motoboy-img">
+            <h2>Fabio Costa</h1>
+          </div>
+          <div class="motoboy">
+            <div class="motoboy-phone">
+              <ion-icon name="car" class="icon-add"></ion-icon>
+              <p>Placa do Veículo: ABC-1234</p>
+            </div>
+            <div class="motoboy-phone">
+              <ion-icon name="call" class="icon-add"></ion-icon>
+              <p>(11) 98765-4321</p>
+            </div>
+            <div class="motoboy-phone">
+              <ion-icon name="mail" class="icon-add"></ion-icon>
+              <p>fabiocosta@example.com</p>
+            </div>
+          </div>
+          
         </div>
         
         <div class="motoboy-actions">
@@ -77,7 +113,10 @@
       </li>
       <li class="motoboy-item">
         <div class="motoboy-info">
-          <h2>Thiago da Silva</h2>
+          <div class="motoboy-img-nome">
+            <img src="/desafio2/assets/perfil5.png" alt="Imagem moto boy 1" class="motoboy-img">
+            <h2>Thiago Silva</h1>
+          </div>
           <p>Placa do Veículo: ABC-1234</p>
           <p>Telefone: (11) 98765-4321</p>
           <p>Email: thiago@example.com</p>
@@ -90,6 +129,10 @@
       </li>
     </ul>
   </main>
+
+  <footer class="footer-container">
+
+  </footer>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
