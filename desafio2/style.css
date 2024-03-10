@@ -108,8 +108,13 @@ h3 {
   color: #f3f3f3;
 }
 
-.name-motoboy{
+.name-motoboy {
   cursor: pointer;
+}
+
+.name-motoboy:hover {
+  transform: scaleX(1.04);
+  transition-duration: 100ms;
 }
 
 p {
@@ -150,7 +155,7 @@ p {
 }
 
 .main-container {
-  margin: 8rem auto 20px; /* Adiciona 80px de margem superior para compensar a altura do header */
+  margin: 8rem auto 20px;
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
@@ -191,7 +196,7 @@ section {
 }
 
 .motoboy-item:hover {
-  background-color: #f3f3f32b;
+  background-color: #e4e2e22b;
   animation-duration: 100ms;
 }
 
