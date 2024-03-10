@@ -1,141 +1,527 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gestão de Motoboys</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="header-container">
-    <a href="#">
-      <h1 class="h1-header">MotosGuide</h1>
-    </a>
-    <nav class="nav-header">
-      <input type="text" class="input-header" placeholder="Pesquisar motoboy..." >
-      <div class="nav-icons">
-        <a href="#">
-          <ion-icon name="add-circle"class="icon-add icon-header"></ion-icon>
-        </a>
-        <a href="#">
-          <ion-icon name="chatbubble"class="icon-add icon-header"></ion-icon>
-        </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestão de Motoboys</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header-container">
+      <a>
+        <h1 class="h1-header">MotosGuide</h1>
+      </a>
+      <nav class="nav-header">
+        <input
+          type="text"
+          class="input-header search-header"
+          placeholder="Pesquisar motoboy..."
+        />
+        <div class="nav-icons">
+          <a>
+            <ion-icon name="add-circle" class="icon-add icon-header"></ion-icon>
+          </a>
+          <a>
+            <ion-icon name="chatbubble" class="icon-add icon-header"></ion-icon>
+          </a>
+          <ion-icon name="menu" class="menu-icon"></ion-icon>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h2 class="title-main">Cadastrados</h2>
+      <div class="all-sections">
+        <section class="motoboys-online">
+          <h2 class="title-online">Online</h2>
+          <ul class="motoboys-list">
+            <li class="motoboy-item">
+              <div class="motoboy-info">
+                <div class="motoboy-data">
+                  <img
+                    src="/desafio2/assets/perfil1On.png"
+                    alt="Imagem moto boy 1"
+                    class="motoboy-img"
+                  />
+                  <div>
+                    <h3>João Silva</h3>
+                    <p class="status-motoboy-onRide">Em corrida...</p>
+                  </div>
+                  <h3 class="info-ui" style="display: none">ABC-1234</h3>
+                  <h3 class="info-ui" style="display: none">(11) 98765-4321</h3>
+                  <h3 class="info-ui" style="display: none">joao@gmail.com</h3>
+                </div>
+                <div class="motoboy-actions">
+                  <button class="chat-button">
+                    <ion-icon name="chatbubble-ellipses"></ion-icon>
+                  </button>
+                  <button class="edit-button">
+                    <ion-icon name="pencil"></ion-icon>
+                  </button>
+                  <button class="delete-button">
+                    <ion-icon name="trash"></ion-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="icon-add ellipsis-icon">
+                <a>
+                  <ion-icon
+                    class="icon-ellipsis"
+                    name="ellipsis-vertical"
+                  ></ion-icon
+                ></a>
+              </div>
+            </li>
+
+            <li class="motoboy-item">
+              <div class="motoboy-info">
+                <div class="motoboy-data">
+                  <img
+                    src="/desafio2/assets/perfil2On.png"
+                    alt="Imagem moto boy 1"
+                    class="motoboy-img"
+                  />
+                  <div>
+                    <h3>John Carlos</h3>
+                    <p class="status-motoboy-on">Disponível</p>
+                  </div>
+                  <h3 style="display: none">QJT 4112</h3>
+                  <h3 style="display: none">(11) 98765-4321</h3>
+                  <h3 style="display: none">john@gmail.com</h3>
+                </div>
+                <div class="motoboy-actions">
+                  <button class="chat-button">
+                    <ion-icon name="chatbubble-ellipses"></ion-icon>
+                  </button>
+                  <button class="edit-button">
+                    <ion-icon name="pencil"></ion-icon>
+                  </button>
+                  <button class="delete-button">
+                    <ion-icon name="trash"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="icon-add ellipsis-icon">
+                <a>
+                  <ion-icon
+                    class="icon-ellipsis"
+                    name="ellipsis-vertical"
+                  ></ion-icon
+                ></a>
+              </div>
+            </li>
+
+            <li class="motoboy-item">
+              <div class="motoboy-info">
+                <div class="motoboy-data">
+                  <img
+                    src="/desafio2/assets/perfil3On.png"
+                    alt="Imagem moto boy 1"
+                    class="motoboy-img"
+                  />
+                  <div>
+                    <h3>Carla Russo</h3>
+                    <p class="status-motoboy-on">Disponível</p>
+                  </div>
+                  <h3 style="display: none">QJT 4112</h3>
+                  <h3 style="display: none">(11) 98765-4321</h3>
+                  <h3 style="display: none">carla@gmail.com</h3>
+                </div>
+
+                <div class="motoboy-actions">
+                  <button class="chat-button">
+                    <ion-icon name="chatbubble-ellipses"></ion-icon>
+                  </button>
+                  <button class="edit-button">
+                    <ion-icon name="pencil"></ion-icon>
+                  </button>
+                  <button class="delete-button">
+                    <ion-icon name="trash"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="icon-add ellipsis-icon">
+                <a>
+                  <ion-icon
+                    class="icon-ellipsis"
+                    name="ellipsis-vertical"
+                  ></ion-icon
+                ></a>
+              </div>
+            </li>
+            <li class="motoboy-item">
+              <div class="motoboy-info">
+                <div class="motoboy-data">
+                  <img
+                    src="/desafio2/assets/perfil4On.png"
+                    alt="Imagem moto boy 1"
+                    class="motoboy-img"
+                  />
+                  <div>
+                    <h3>Fabio Costa</h3>
+                    <p class="status-motoboy-onRide">Em corrida...</p>
+                  </div>
+                  <h3 style="display: none">QJT 4112</h3>
+                  <h3 style="display: none">(11) 98765-4321</h3>
+                  <h3 style="display: none">fabiocosta@gmail.com</h3>
+                </div>
+                <div class="motoboy-actions">
+                  <button class="chat-button">
+                    <ion-icon name="chatbubble-ellipses"></ion-icon>
+                  </button>
+                  <button class="edit-button">
+                    <ion-icon name="pencil"></ion-icon>
+                  </button>
+                  <button class="delete-button">
+                    <ion-icon name="trash"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="icon-add ellipsis-icon">
+                <a>
+                  <ion-icon
+                    class="icon-ellipsis"
+                    name="ellipsis-vertical"
+                  ></ion-icon
+                ></a>
+              </div>
+            </li>
+            <li class="motoboy-item">
+              <div class="motoboy-info">
+                <div class="motoboy-data">
+                  <div class="motoboy-img-nome">
+                    <img
+                      src="/desafio2/assets/perfil5On.png"
+                      alt="Imagem moto boy 1"
+                      class="motoboy-img"
+                    />
+                    <div>
+                      <h3>Thiago Silva</h3>
+                      <p class="status-motoboy-on">Disponível</p>
+                    </div>
+                    <h3 style="display: none">QJT 4112</h3>
+                    <h3 style="display: none">(44) 98765-4321</h3>
+                    <h3 style="display: none">thiago@gmail.com</h3>
+                  </div>
+                </div>
+
+                <div class="motoboy-actions">
+                  <button class="chat-button">
+                    <ion-icon name="chatbubble-ellipses"></ion-icon>
+                  </button>
+                  <button class="edit-button">
+                    <ion-icon name="pencil"></ion-icon>
+                  </button>
+                  <button class="delete-button">
+                    <ion-icon name="trash"></ion-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="icon-add ellipsis-icon">
+                <a>
+                  <ion-icon
+                    class="icon-ellipsis"
+                    name="ellipsis-vertical"
+                  ></ion-icon
+                ></a>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="motoboys-offline">
+          <h2 class="title-offline">Offline</h2>
+          <ul class="motoboys-list">
+            <li class="motoboy-item">
+              <div class="motoboy-info">
+                <div class="motoboy-data">
+                  <img
+                    src="/desafio2/assets/perfil1Off.png"
+                    alt="Imagem moto boy 1"
+                    class="motoboy-img"
+                  />
+                  <div>
+                    <h3>Marta Costa</h3>
+                    <p class="status-motoboy-off">Indisponível</p>
+                  </div>
+                  <h3 style="display: none">QJT 4112</h3>
+                  <h3 style="display: none">(11) 98765-4321</h3>
+                  <h3 style="display: none">marta@gmail.com</h3>
+                </div>
+
+                <div class="motoboy-actions">
+                  <button class="chat-button">
+                    <ion-icon name="chatbubble-ellipses"></ion-icon>
+                  </button>
+                  <button class="edit-button">
+                    <ion-icon name="pencil"></ion-icon>
+                  </button>
+                  <button class="delete-button">
+                    <ion-icon name="trash"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="icon-add ellipsis-icon">
+                <a>
+                  <ion-icon
+                    class="icon-ellipsis"
+                    name="ellipsis-vertical"
+                  ></ion-icon
+                ></a>
+              </div>
+            </li>
+
+            <li class="motoboy-item">
+              <div class="motoboy-info">
+                <div class="motoboy-data">
+                  <img
+                    src="/desafio2/assets/perfil2Off.png"
+                    alt="Imagem moto boy 1"
+                    class="motoboy-img"
+                  />
+                  <div>
+                    <h3>Patrício Lipe</h3>
+                    <p class="status-motoboy-off">Indisponível</p>
+                  </div>
+                  <h3 style="display: none">QJT 4112</h3>
+                  <h3 style="display: none">(11) 98765-4321</h3>
+                  <h3 style="display: none">patricio@gmail.com</h3>
+                </div>
+                <div class="motoboy-actions">
+                  <button class="chat-button">
+                    <ion-icon name="chatbubble-ellipses"></ion-icon>
+                  </button>
+                  <button class="edit-button">
+                    <ion-icon name="pencil"></ion-icon>
+                  </button>
+                  <button class="delete-button">
+                    <ion-icon name="trash"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="icon-add ellipsis-icon">
+                <a>
+                  <ion-icon
+                    class="icon-ellipsis"
+                    name="ellipsis-vertical"
+                  ></ion-icon
+                ></a>
+              </div>
+            </li>
+
+            <li class="motoboy-item">
+              <div class="motoboy-info">
+                <div class="motoboy-data">
+                  <img
+                    src="/desafio2/assets/perfil3Off.png"
+                    alt="Imagem moto boy 1"
+                    class="motoboy-img"
+                  />
+                  <div>
+                    <h3>Olivia Renh</h3>
+                    <p class="status-motoboy-off">Indisponível</p>
+                  </div>
+                  <h3 style="display: none">QJT 4112</h3>
+                  <h3 style="display: none">(11) 98765-4321</h3>
+                  <h3 style="display: none">olivia@example.com</h3>
+                </div>
+
+                <div class="motoboy-actions">
+                  <button class="chat-button">
+                    <ion-icon name="chatbubble-ellipses"></ion-icon>
+                  </button>
+                  <button class="edit-button">
+                    <ion-icon name="pencil"></ion-icon>
+                  </button>
+                  <button class="delete-button">
+                    <ion-icon name="trash"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="icon-add ellipsis-icon">
+                <a>
+                  <ion-icon
+                    class="icon-ellipsis"
+                    name="ellipsis-vertical"
+                  ></ion-icon
+                ></a>
+              </div>
+            </li>
+
+            <li class="motoboy-item">
+              <div class="motoboy-info">
+                <div class="motoboy-data">
+                  <img
+                    src="/desafio2/assets/perfil4Off.png"
+                    alt="Imagem moto boy 1"
+                    class="motoboy-img"
+                  />
+                  <div>
+                    <h3>Iago Nunes</h3>
+                    <p class="status-motoboy-off">Indisponível</p>
+                  </div>
+                  <h3 style="display: none">QJT 4112</h3>
+                  <h3 style="display: none">(11) 98765-4321</h3>
+                  <h3 style="display: none">iago@gmail.com</h3>
+                </div>
+                <div class="motoboy-actions">
+                  <button class="chat-button">
+                    <ion-icon name="chatbubble-ellipses"></ion-icon>
+                  </button>
+                  <button class="edit-button">
+                    <ion-icon name="pencil"></ion-icon>
+                  </button>
+                  <button class="delete-button">
+                    <ion-icon name="trash"></ion-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="icon-add ellipsis-icon">
+                <a>
+                  <ion-icon
+                    class="icon-ellipsis"
+                    name="ellipsis-vertical"
+                  ></ion-icon
+                ></a>
+              </div>
+            </li>
+
+            <li class="motoboy-item">
+              <div class="motoboy-info">
+                <div class="motoboy-data">
+                  <div class="motoboy-img-nome">
+                    <img
+                      src="/desafio2/assets/perfil5Off.png"
+                      alt="Imagem moto boy 1"
+                      class="motoboy-img"
+                    />
+                    <div>
+                      <h3>Pablo Silva</h3>
+                      <p class="status-motoboy-off">Indisponível</p>
+                    </div>
+                    <h3 style="display: none">QJT 4112</h3>
+                    <h3 style="display: none">49042842</h3>
+                    <h3 style="display: none">pablo@gmail.com</h3>
+                  </div>
+                </div>
+                <div class="motoboy-actions">
+                  <button class="chat-button">
+                    <ion-icon name="chatbubble-ellipses"></ion-icon>
+                  </button>
+                  <button class="edit-button">
+                    <ion-icon name="pencil"></ion-icon>
+                  </button>
+                  <button class="delete-button">
+                    <ion-icon name="trash"></ion-icon>
+                  </button>
+                </div>
+              </div>
+
+              <div class="icon-add ellipsis-icon">
+                <a>
+                  <ion-icon
+                    class="icon-ellipsis"
+                    name="ellipsis-vertical"
+                  ></ion-icon
+                ></a>
+              </div>
+            </li>
+          </ul>
+        </section>
       </div>
-    </nav>
-    
-  </header>
+    </main>
 
-
-  <main class="main-container">
-    <h2> Cadastrados</h2>
-    <ul class="motoboys-list">
-      <li class="motoboy-item">
-        <div class="motoboy-info">
-          <div class="motoboy-img-nome">
-            <img src="/desafio2/assets/perfil1.png" alt="Imagem moto boy 1" class="motoboy-img">
-            <h3>João da Silva</h3>
-          </div>
-          <!-- <p>Placa do Veículo: ABC-1234</p>
-          <p>Telefone: (11) 98765-4321</p>
-          <p>Email: joao@example.com</p> -->
-        </div>
-        
-        <div class="motoboy-actions">
-          <button class="edit-button">Editar</button>
-          <button class="delete-button">Excluir</button>
-        </div>
-      </li>
-
-      <li class="motoboy-item">
-        <div class="motoboy-info">
-          <div class="motoboy-img-nome">
-            <img src="/desafio2/assets/perfil2.png" alt="Imagem moto boy 1" class="motoboy-img">
-            <h3>Mateus Pereira</h3>
-          </div>
-          <!-- <p>Placa do Veículo: ABC-1234</p>
-          <p>Telefone: (11) 98765-4321</p>
-          <p>Email: mateuspereira@example.com</p> -->
-        </div>
-        
-        <div class="motoboy-actions">
-          <button class="edit-button">Editar</button>
-          <button class="delete-button">Excluir</button>
-        </div>
-      </li>
-
-      <li class="motoboy-item">
-        <div class="motoboy-info">
-          <div class="motoboy-img-nome">
-            <img src="/desafio2/assets/perfil3.png" alt="Imagem moto boy 1" class="motoboy-img">
-            <h3>Cristina Rocha</h3>
-          </div>
-          <!-- <p>Placa do Veículo: ABC-1234</p>
-          <p>Telefone: (11) 98765-4321</p>
-          <p>Email: gustavo@example.com</p> -->
-        </div>
-        
-        <div class="motoboy-actions">
-          <button class="edit-button">Editar</button>
-          <button class="delete-button">Excluir</button>
-        </div>
-      </li>
-      <li class="motoboy-item">
-        <div class="motoboy-info">
-          <div class="motoboy-img-nome">
-            <img src="/desafio2/assets/perfil4.png" alt="Imagem moto boy 1" class="motoboy-img">
-            <h3>Fabio Costa</h3>
-          </div>
-          <div class="motoboy">
-            <div class="motoboy-phone">
-              <ion-icon name="car" class="icon-add"></ion-icon>
-              <p>Placa do Veículo: ABC-1234</p>
-            </div>
-            <div class="motoboy-phone">
-              <ion-icon name="call" class="icon-add"></ion-icon>
-              <p>(11) 98765-4321</p>
-            </div>
-            <div class="motoboy-phone">
-              <ion-icon name="mail" class="icon-add"></ion-icon>
-              <p>fabiocosta@example.com</p>
-            </div>
-          </div>
-          
-        </div>
-        
-        <div class="motoboy-actions">
-          <button class="edit-button">Editar</button>
-          <button class="delete-button">Excluir</button>
-        </div>
-      </li>
-      <li class="motoboy-item">
-        <div class="motoboy-info">
-          <div class="motoboy-img-nome">
-            <img src="/desafio2/assets/perfil5.png" alt="Imagem moto boy 1" class="motoboy-img">
-            <h3>Thiago Silva</h3>
-          </div>
-          <p>Placa do Veículo: ABC-1234</p>
-          <p>Telefone: (11) 98765-4321</p>
-          <p>Email: thiago@example.com</p>
-        </div>
-        
-        <div class="motoboy-actions">
-          <button class="edit-button"><ion-icon name="pencil"></ion-icon></button>
-          <button class="delete-button"><ion-icon name="trash"></ion-icon></button>
-        </div>
-      </li>
-    </ul>
-  </main>
-  <footer class="footer-container">
+    <footer class="footer-container">
       <div class="footer-text">
         <h1 class="h1-footer">MotosGuide</h1>
         <p class="p-footer">@DesafioMp</p>
       </div>
-  </footer>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+    </footer>
+
+    <div id="dialog"></div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      $(function () {
+        $("#dialog").dialog({
+          autoOpen: false,
+          width: 600,
+          height: "300",
+          show: {
+            effect: "fade",
+            duration: 400,
+          },
+          hide: {
+            effect: "fade",
+            duration: 200,
+          },
+        });
+
+        var deleteButtons = document.querySelectorAll(".delete-button");
+
+        deleteButtons.forEach((button) => {
+          button.onclick = (event) => {
+            console.log(
+              event.currentTarget.parentNode.parentNode.parentNode.remove()
+            );
+          };
+        });
+
+        var ellipsisIcons = document.querySelectorAll(".icon-ellipsis");
+
+        ellipsisIcons.forEach((icon) => {
+          icon.onclick = (event) => {
+            var motoboyInfo = event.currentTarget
+              .closest(".motoboy-item")
+              .querySelector(".motoboy-info");
+            if (motoboyInfo) {
+              var motoboyData = motoboyInfo.querySelector(".motoboy-data");
+              var nome_do_motoboy = motoboyData.querySelector("h3").innerHTML;
+              var placa_do_motoboy =
+                motoboyData.querySelectorAll("h3")[1].innerHTML;
+              var telefone_do_motoboy =
+                motoboyData.querySelectorAll("h3")[2].innerHTML;
+              var email_do_motoboy =
+                motoboyData.querySelectorAll("h3")[3].innerHTML;
+
+              var myString = `<div class="gap-ui-text first-ui-text">Placa: ${placa_do_motoboy}</div><div class="gap-ui-text">Telefone: ${telefone_do_motoboy}</div><div class="gap-ui-text">Email: ${email_do_motoboy}</div>`;
+
+              $("#dialog").html(myString);
+              $("#dialog").dialog("option", "title", nome_do_motoboy);
+              $("#dialog").dialog("open");
+            }
+          };
+        });
+      });
+    </script>
+  </body>
 </html>

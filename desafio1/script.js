@@ -5,7 +5,7 @@ const users = [
     {name: 'João', age: 32, email: 'joao@gmail.com'}
 ];
 
-const valorPesquisa = 'Kalebe';
+const searchValue = 'Kalebe';
 
 function searchUser(usersArray, searchValue) {
     return new Promise((resolve, reject) => { 
@@ -20,9 +20,9 @@ function searchUser(usersArray, searchValue) {
     });
 }
 
-searchUser(users, valorPesquisa)
-    .then(usuarioEncontrado => {
-        console.log('Usuário encontrado:', usuarioEncontrado);
+searchUser(users, searchValue)
+    .then(userFound => {
+        console.log('Usuário encontrado:', userFound);
     })
     .catch(error => {
         console.error('Erro:', error.message);

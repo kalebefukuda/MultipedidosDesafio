@@ -1,203 +1,468 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Satoshi', sans-serif;
-    background-color: #242424;
-    background-size: contain;
-  }
-  .header-container{
-    display: flex;
-    justify-content: space-between;
-    background: #ff4d00;
-    border-radius: 0 0 20px 20px;
-    width: 100%;
-    position: fixed;
-    top: 0px;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: "Satoshi", sans-serif;
+  background-color: #242424;
+  background-size: contain;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  background: #ff4d00;
+  border-radius: 0 0 20px 20px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 6;
+}
 
-  a{
-    text-decoration-color: none;
-    text-decoration: none;
-  }
+a {
+  text-decoration-color: none;
+  text-decoration: none;
+}
 
-  h1{
-    font-family: "Montserrat Alternates", sans-serif;
-    text-align: center;
-    color: #F3F3F3;
-  }
+h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  text-align: center;
+  color: #f3f3f3;
+}
 
-  .h1-header{
-    font-family: "Montserrat Alternates", sans-serif;
-    text-align: center;
-    margin-left:50px;
-    color: #F3F3F3;
-    
-  }
+.h1-header {
+  font-family: "Montserrat Alternates", sans-serif;
+  text-align: center;
+  margin-left: 50px;
+  color: #f3f3f3;
+  margin-bottom: 28px;
+}
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  color: #f3f3f3;
+  margin-right: 20px;
+}
 
-  .nav-header{
-    display: flex;
+.nav-header {
+  display: flex;
+  align-items: center;
+  margin-right: 80px;
+  gap: 20px;
+}
+
+.nav-header a {
+  margin-right: 10px;
+}
+
+.input-header {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #242424;
+  padding: 7px;
+  width: 20rem;
+}
+
+.input-header::placeholder {
+  color: #242424;
+  font-family: "Satoshi", sans-serif;
+  padding: 5px;
+}
+
+.nav-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-add {
+  font-size: 22px;
+  margin-right: 10px;
+  align-self: center;
+  text-decoration: none;
+  justify-content: center;
+  color: #f3f3f3;
+}
+
+.ellipsis-icon a {
+  display: flex;
+  height: 11.9rem;
+  color: #f3f3f3;
+}
+
+.icon-ellipsis {
+  cursor: pointer;
+}
+
+.icon-header {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #f3f3f3;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+h3 {
+  font-size: 30px;
+  color: #f3f3f3;
+}
+
+p {
+  color: #f3f3f3;
+}
+
+.status-motoboy-on {
+  position: relative;
+  top: -27px;
+  color: #3ab11c;
+  font-weight: 500;
+}
+
+.status-motoboy-off {
+  position: relative;
+  top: -27px;
+  color: #df3636;
+  font-weight: 500;
+}
+
+.status-motoboy-onRide {
+  position: relative;
+  top: -27px;
+  color: #e7d626;
+  font-weight: 500;
+}
+
+.title-offline {
+  border-bottom: 1px solid #f3f3f387;
+  width: 7rem;
+  padding-bottom: 10px;
+}
+
+.title-online {
+  border-bottom: 1px solid #f3f3f387;
+  width: 7rem;
+  padding-bottom: 10px;
+}
+
+.main-container {
+  margin: 8rem auto 20px; /* Adiciona 80px de margem superior para compensar a altura do header */
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.title-main {
+  margin-left: 92px;
+  margin-top: 10px;
+}
+.all-sections {
+  display: flex;
+  justify-content: space-around;
+}
+
+section {
+  width: 40%;
+}
+
+.motoboys-list {
+  list-style: none;
+  padding: 0;
+}
+
+.motoboy-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.095);
+  transition: background-color 0.3s ease;
+}
+
+.motobot-personal-info {
+  background-color: blue;
+}
+
+.motoboy-item:hover {
+  background-color: #f3f3f32b;
+  animation-duration: 100ms;
+}
+
+.motoboy-data {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.motoboy-img-nome {
+  display: flex;
+  gap: 30px;
+}
+
+.motoboy-phone {
+  display: flex;
+}
+
+.motoboy-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 134px;
+  height: 134px;
+  background-size: cover;
+}
+
+.motoboy-info {
+  flex-grow: 1;
+  padding: 15px;
+}
+
+.motoboy-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.motoboy-actions button {
+  gap: 10px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5rem;
+  margin-left: 5px;
+}
+
+.edit-button {
+  background-color: #1766bb;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  width: 3.2rem;
+}
+
+.edit-button:hover {
+  background-color: rgb(66, 126, 247);
+  animation-duration: 100ms;
+}
+
+.chat-button {
+  background-color: #1d981b;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  width: 3.2rem;
+}
+
+.chat-button:hover {
+  background-color: #2dd12a;
+  animation-duration: 100ms;
+}
+
+.delete-button {
+  background-color: rgb(184, 37, 52);
+  transition: background-color 0.3s ease;
+  color: #fff;
+  width: 3.2rem;
+}
+
+.delete-button:hover {
+  background-color: rgb(245, 8, 31);
+  animation-duration: 100ms;
+}
+.ui-widget.ui-widget-content {
+  border: 3.5px solid #ff4d009c;
+  border-radius: 10px;
+}
+
+.ui-dialog-content {
+  background-color: rgba(255, 255, 255, 0.045);
+  color: #f3f3f3;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.ui-widget-content {
+  background-color: rgba(255, 255, 255, 0.045);
+  color: #f3f3f3;
+  font-weight: 600;
+  font-size: 20px;
+}
+#dialog {
+  background-color: rgba(255, 255, 255, 0.045);
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.ui-dialog-title {
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: #ff4d00;
+  color: #f3f3f3;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.ui-dialog-titlebar,
+.ui-corner-all,
+.ui-widget-header,
+.ui-helper-clearfix,
+.ui-draggable-handle {
+  font-family: "Satoshi", sans-serif;
+  background-color: #242424;
+  color: #f3f3f3;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+.first-ui-text {
+  margin-top: 28px;
+}
+
+.gap-ui-text {
+  margin-bottom: 16px;
+}
+
+.footer-container {
+  height: 8.5rem;
+  display: flex;
+  margin-top: 4rem;
+  background-color: #ff4d00;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px 10px 0 0;
+}
+
+.footer-text {
+  margin-top: 20px;
+}
+.p-footer {
+  color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+}
+
+.h1-footer {
+  margin-bottom: -8px;
+}
+
+@media screen and (max-width: 924px) {
+  .header-container {
     align-items: center;
-    margin-right: 80px;
-    gap:20px
-    
+  }
+  .h1-header {
+    position: relative;
+    left: 30px;
+    bottom: 4px;
+  }
+  .menu-icon {
+    display: block;
+    position: relative;
+    left: 3rem;
+    top: -5px;
   }
 
-  .nav-header a{
-    margin-right: 10px;
+  .icon-header {
+    margin-right: 0;
+    margin-top: 20px;
+    display: none;
+  }
+  .search-header {
+    display: none;
   }
 
-  .input-header{
-    border:none;
-    outline: none;
-    border-radius: 10px;
-    font-size: 15px;
-    color: #242424;
-    padding: 7px;
-    width: 20rem;
-    
+  .h1-header {
+    margin-left: 0;
+    margin-bottom: 10px;
   }
 
-  .input-header::placeholder{
-    color: #242424;
-    font-family: 'Satoshi', sans-serif;
-    padding: 5px;
-  }
-
-  .nav-icons{
+  .title-main {
     display: flex;
+    justify-content: center;
+    font-size: 25px;
+    align-items: center;
+    margin-top: -27px;
+    margin-left: -313px;
+  }
+
+  .title-online {
+    font-size: 20px;
+    border-bottom: 1px solid #f3f3f387;
+    width: 4.5rem;
+  }
+
+  .title-offline {
+    font-size: 20px;
+    border-bottom: 1px solid #f3f3f387;
+    width: 4.5rem;
+  }
+
+  .nav-icons {
+    margin-top: 10px;
+  }
+
+  .all-sections {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    width: 30rem;
+    margin-bottom: 40px;
+  }
+
+  .ellipsis-icon {
+    width: 20px;
+  }
+
+  .motoboy-img-nome {
     justify-content: center;
     align-items: center;
   }
 
-  .icon-add{
-    font-size: 22px;
-    margin-right: 10px;
-    align-self: center;
-    text-decoration: none;
-    justify-content: center;
-    color: #F3F3F3;
-  }
-
-  .icon-header{
-    font-size: 26px;
-  }
-
-  h2 {
-    font-size: 30px;
-    color: #F3F3F3;
-    font-family: "Montserrat Alternates", sans-serif;
-  }
-
-  h3 {
-    font-size: 30px;
-    color: #F3F3F3;
-
-  }
-  
-  .main-container {
-    max-width: 800px;
-    margin: 8rem auto 20px; /* Adiciona 80px de margem superior para compensar a altura do header */
-    padding: 0 20px;
-  }
- 
-  
-  .motoboys-list {
-    list-style: none;
-    padding: 0;
-  }
-  
   .motoboy-item {
-    margin-bottom: 12px;
+    width: 95%;
+    margin: 0 auto 20px;
     padding: 10px;
-    display: flex;
-    justify-content: space-between;
+  }
+
+  .motoboy-img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 17px;
+  }
+  .motoboy-data {
+    margin-right: 120px;
     align-items: center;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.146);
-    transition: background-color 0.3s ease;
-  }
-  
-
-  .motobot-personal-info{
-    background-color: blue;
-  }
-
-  .motoboy-item:hover{
-    box-shadow: 0 0 10px rgb(156 163 175); 
-    transition: box-shadow 0.3s ease; 
-  }
-  
-  .motoboy-img-nome{
-    display: flex;
-    gap: 30px;
-    margin-bottom: 20px;
-  }
-
-  .motoboy-phone {
-    display: flex;
-    
-  }
-
-  .motoboy-img{
-    width: 90px;
   }
 
   .motoboy-info {
-    flex-grow: 1;
-    padding: 15px;
+    padding: 0 10px;
   }
 
-  .motoboy-actions{
-    display: flex;
-    
+  .motoboy-actions {
+    flex-direction: row;
+    margin-top: 10px;
+    padding-bottom: 10px;
   }
-  
+
   .motoboy-actions button {
-    gap: 10px;
-    cursor: pointer;
-    padding: 6px 10px;
-    border: none;
-    border-radius: 5px;
-    margin-left: 5px;
+    margin-left: 0;
   }
-  
-  .edit-button {
-    background-color: #007bff;
-    color: #fff;
-    transition: background-color 0.3s ease;
+  .ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable {
+    width: 70%;
+    max-width: 300px;
+    height: auto;
+    max-height: 300px;
   }
-  
-  .delete-button {
-    background-color: #dc3545;
-    color: #fff;
-  }
-  
-  .edit-button:hover{
-    background-color: rgb(47, 107, 227);
-    animation-duration: 100ms;
+}
 
+@media screen and (max-width: 500px) {
+  .input-header {
+    width: 100%;
   }
-
-  .footer-container {
-    height: 8.5rem;
-    display: flex;
-    margin-top: 4rem;
-    background-color: #ff4d00;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 20px 10px 0 0;
-  }
-  .footer-text{
-    margin-top: 20px;
-    
-  }
-  .p-footer{
-    color: #F3F3F3;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .h1-footer {
-    margin-bottom: -8px; /* Ajusta a margem inferior do h1 */
-  }
+}
