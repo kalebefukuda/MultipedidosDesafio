@@ -61,7 +61,7 @@
                     class="motoboy-img"
                   />
                   <div>
-                    <h3>João Silva</h3>
+                    <h3 class="name-motoboy">João Silva</h3>
                     <p class="status-motoboy-onRide">Em corrida...</p>
                   </div>
                   <h3 class="info-ui" style="display: none">ABC-1234</h3>
@@ -99,7 +99,7 @@
                     class="motoboy-img"
                   />
                   <div>
-                    <h3>John Carlos</h3>
+                    <h3 class="name-motoboy">John Carlos</h3>
                     <p class="status-motoboy-on">Disponível</p>
                   </div>
                   <h3 style="display: none">QJT 4112</h3>
@@ -138,7 +138,7 @@
                     class="motoboy-img"
                   />
                   <div>
-                    <h3>Carla Russo</h3>
+                    <h3 class="name-motoboy">Carla Russo</h3>
                     <p class="status-motoboy-on">Disponível</p>
                   </div>
                   <h3 style="display: none">QJT 4112</h3>
@@ -177,7 +177,7 @@
                     class="motoboy-img"
                   />
                   <div>
-                    <h3>Fabio Costa</h3>
+                    <h3 class="name-motoboy">Fabio Costa</h3>
                     <p class="status-motoboy-onRide">Em corrida...</p>
                   </div>
                   <h3 style="display: none">QJT 4112</h3>
@@ -216,7 +216,7 @@
                       class="motoboy-img"
                     />
                     <div>
-                      <h3>Thiago Silva</h3>
+                      <h3 class="name-motoboy">Thiago Silva</h3>
                       <p class="status-motoboy-on">Disponível</p>
                     </div>
                     <h3 style="display: none">QJT 4112</h3>
@@ -260,7 +260,7 @@
                     class="motoboy-img"
                   />
                   <div>
-                    <h3>Marta Costa</h3>
+                    <h3 class="name-motoboy">Marta Costa</h3>
                     <p class="status-motoboy-off">Indisponível</p>
                   </div>
                   <h3 style="display: none">QJT 4112</h3>
@@ -300,7 +300,7 @@
                     class="motoboy-img"
                   />
                   <div>
-                    <h3>Patrício Lipe</h3>
+                    <h3 class="name-motoboy">Patrício Lipe</h3>
                     <p class="status-motoboy-off">Indisponível</p>
                   </div>
                   <h3 style="display: none">QJT 4112</h3>
@@ -339,7 +339,7 @@
                     class="motoboy-img"
                   />
                   <div>
-                    <h3>Olivia Renh</h3>
+                    <h3 class="name-motoboy">Olivia Renh</h3>
                     <p class="status-motoboy-off">Indisponível</p>
                   </div>
                   <h3 style="display: none">QJT 4112</h3>
@@ -379,7 +379,7 @@
                     class="motoboy-img"
                   />
                   <div>
-                    <h3>Iago Nunes</h3>
+                    <h3 class="name-motoboy">Iago Nunes</h3>
                     <p class="status-motoboy-off">Indisponível</p>
                   </div>
                   <h3 style="display: none">QJT 4112</h3>
@@ -418,7 +418,7 @@
                       class="motoboy-img"
                     />
                     <div>
-                      <h3>Pablo Silva</h3>
+                      <h3 class="name-motoboy">Pablo Silva</h3>
                       <p class="status-motoboy-off">Indisponível</p>
                     </div>
                     <h3 style="display: none">QJT 4112</h3>
@@ -478,7 +478,7 @@
           height: "300",
           show: {
             effect: "fade",
-            duration: 400,
+            duration: 300,
           },
           hide: {
             effect: "fade",
@@ -496,7 +496,7 @@
           };
         });
 
-        var ellipsisIcons = document.querySelectorAll(".icon-ellipsis");
+        var ellipsisIcons = document.querySelectorAll(".edit-button, .name-motoboy");
 
         ellipsisIcons.forEach((icon) => {
           icon.onclick = (event) => {
